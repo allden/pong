@@ -44,7 +44,7 @@ function draw() {
         dx = -dx;
     } else if(y > canvas.height - paddleHeight - ballRadius) {
         if(x > paddleX && x < paddleX + paddleWidth) {
-            dy = -dy;
+            dy = -dy - 2;
         } else {
             document.location.reload();
         }
